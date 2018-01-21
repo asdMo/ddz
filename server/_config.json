@@ -1,0 +1,13 @@
+{
+	"database": {
+		"connectionLimit": 3,
+		"host": "127.0.0.1",
+		"port": 6306,
+		"user": "root",
+		"password": "123456",
+		"database": "test"
+	},
+	"dbname": {
+		"share": "test"
+	}
+}

@@ -1,0 +1,2 @@
+node wss.js
+@pause
