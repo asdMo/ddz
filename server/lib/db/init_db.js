@@ -4,7 +4,7 @@ const mysqlint = require('./mysqlint.js');
 const table = require('./table.js');
 
 const kCreateUser = `create table if not exists ${table.user}(
-	id bigint not null primary key auto_increment,
+    id bigint not null primary key auto_increment,
     uid VARCHAR(50) default null,
     score BIGINT not null default 0 comment "分数",
     creation datetime default CURRENT_TIMESTAMP,
