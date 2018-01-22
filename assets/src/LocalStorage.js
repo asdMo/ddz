@@ -44,6 +44,10 @@ let ls = {
             cc.warn(this._TAG + ' setItem param error key ==> ' + key);
             return;
         };
+        if (typeof (value) === 'undefined') {
+            cc.warn(this._TAG + ' setItem param error value ==> ' + value);
+            return;
+        }
         // Encrypt
         let ciphertext = btoa(encodeURI(value + ''));
         // cc.log(key, value, ciphertext);
