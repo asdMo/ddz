@@ -1,4 +1,4 @@
-export default {
+let ws = {
     _TAG: 'websocket client ',
     _hostList: [
         'ws://192.168.1.3:8182',
@@ -71,3 +71,4 @@ export default {
         }
     },
 };
+window.ws = ws;

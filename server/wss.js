@@ -5,6 +5,9 @@ const wss_helper = require('./wss_helper');
 const _TAG = 'WebSocket server ';
 let clientNum = 0;
 
+const PokerMgr = require('./poker_manager');
+PokerMgr.getAllPokers();
+
 function start() {
     console.log('ws start');
     let server = new webSocket.Server({ port: 8182 });
@@ -26,5 +29,5 @@ function start() {
     });
     // console.log(server);
     // wss_helper.broadcastMessage();
-}
+};
 start();

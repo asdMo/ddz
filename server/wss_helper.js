@@ -6,7 +6,7 @@ const _TAG = 'WebSocket server helper ';
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-}
+};
 
 function getRandomList(n) {
     //参数校验
@@ -28,7 +28,7 @@ function getRandomList(n) {
         }
     }
     return list;
-}
+};
 
 // 广播消息（测试广播时间）
 exports.broadcastMessage = function (msg) {
@@ -57,4 +57,4 @@ exports.useMysql = function (msg) {
     mysqlint.myQuery(msg.sql, msg.data).then(function (obj) {
         self.send(JSON.stringify(obj));
     });
-}
+};
