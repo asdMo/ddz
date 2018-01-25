@@ -19,6 +19,9 @@
 // manager.enabledDebugDraw = true;
 // 如果还希望显示碰撞组件的包围盒，那么可以通过以下接口来进行设置
 // manager.enabledDrawBoundingBox = true;
+// 如果开启此选项，那么将会以一个固定的时间步来更新物理引擎，如果一个 update 的间隔时间大于这个时间步，则会对物理引擎进行多次更新。 
+// 如果关闭此选项，那么将会根据设定的 frame rate 计算出一个时间步来更新物理引擎
+// cc.director.getPhysicsManager().enabledAccumulator = true;
 
 // 物理debug
 // cc.director.getPhysicsManager().debugDrawFlags =
